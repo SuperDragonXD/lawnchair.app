@@ -291,21 +291,33 @@ footer span {
 }
 
 @media screen and (max-width: 520px) {
-  .card.card__main {
+  .card.card__main .card__right {
+    display: flex;
     flex-direction: column;
+  }
+
+  section.hero .hero__content {
     text-align: center;
+  }
+
+  .link__card {
+    flex: 1 1 auto;
+    min-width: -webkit-fill-available;
+    min-width: fill-available;
   }
 }
 
 @media screen and (max-width: 400px) {
-  section.hero {
-    text-align: center;
-  }
-
   section.hero .card {
     width: -webkit-fill-available;
     width: fill-available;
     flex-direction: column;
+    text-align: center;
+  }
+
+  .card.card__main .card__right {
+    display: block;
+    padding: 10px;
   }
 }
 
