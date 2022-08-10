@@ -36,10 +36,30 @@
     <meta name="theme-color" content="#02d663" />
 
     <link href="/assets/index.css" rel="stylesheet" />
+    <link href="/assets/common.css" rel="stylesheet" />
   </head>
   <body>
+    <header>
+      <a href="/" class="lawnchair__logo">
+        <img
+          src="/assets/lawnchair.png"
+          width="30"
+          height="30"
+          alt="The Lawnchair Logo"
+        />
+        <span>Lawnchair</span>
+      </a>
+      <nav>
+        <a href="/faq">FAQ</a>
+      </nav>
+    </header>
     <main>
       <section class="hero">
+        <div class="hero__notice">
+          We now have a FAQ section! Find the answers to life's common
+          questions, like how to get themed icons or enabling Google Discover.
+          <a href="/faq">Visit the FAQ now</a>
+        </div>
         <div class="hero__wrapper">
           <div class="hero__left hero__content">
             <img
@@ -153,7 +173,7 @@
             href="https://github.com/LawnchairLauncher/lawnchair"
           >
             <img
-              src="/assets/github.png"
+              src="/assets/github.svg"
               alt=""
               class="dark-invert"
               height="50"
@@ -162,28 +182,44 @@
           </a>
 
           <a class="link__card" href="https://twitter.com/lawnchairapp">
-            <img src="/assets/twitter.png" alt="" height="50" />
+            <img src="/assets/twitter.svg" alt="" height="50" />
             <span>Twitter</span></a
           >
           <a class="link__card" href="https://t.me/lawnchair"
-            ><img src="/assets/telegram.png" alt="" height="50" /><span
+            ><img src="/assets/telegram.svg" alt="" height="50" /><span
               >Telegram</span
             ></a
+          >
+          <a class="link__card" href="https://discord.gg/3x8qNWxgGZ"
+            ><img
+              src="/assets/discord.svg"
+              alt=""
+              height="50"
+            /><span>Discord</span></a
           >
           <a
             class="link__card"
             href="https://forum.xda-developers.com/t/lawnchair-customizable-pixel-launcher.3627137/"
           >
-            <img src="/assets/xda.png" alt="" height="50" />
+            <img src="/assets/xda.svg" alt="" height="50" />
             <span>XDA</span>
           </a>
-          <a
-            class="link__card"
-            href="https://github.com/LawnchairLauncher/lawnchair/wiki"
-            ><img src="/assets/web.png" alt="" height="50" /><span
-              >All links</span
-            ></a
-          >
+          <a class="link__card" href="/faq">
+            <img
+              src="/assets/faq.svg"
+              alt=""
+              height="50"
+            />
+            <span>FAQ</span>
+          </a>
+          <a class="link__card" href="https://github.com/LawnchairLauncher/lawnchair/wiki">
+            <img
+              src="/assets/wiki.svg"
+              alt=""
+              height="50"
+            />
+            <span>Wiki</span>
+          </a>
         </div>
       </section>
     </main>
@@ -192,13 +228,15 @@
         >Website by
         <a href="https://superdragonxd.github.io/">SuperDragonXD</a> - Hosted by
         <a href="https://razex.de">Razex.de</a> - Icons in links section are
-        from <a href="https://www.flaticon.com">Flaticons</a> - Public
-        Analytics on
-        <a href="https://simpleanalytics.com/lawnchair.app">Simple Analytics</a
+        from <a href="https://www.flaticon.com">Flaticons</a> - Public Analytics
+        on
+        <a href="https://simpleanalytics.com/lawnchair.app"
+          >Simple Analytics</a
         ></span
       >
     </footer>
     <script src="/assets/index.js" type="module"></script>
+    <script src="/assets/common.js" type="module"></script>
 
     <script
       async
