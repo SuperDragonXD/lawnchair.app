@@ -52,6 +52,10 @@ header a {
   text-decoration: none;
 }
 
+header a img {
+  border-radius: 50%;
+}
+
 header a:hover {
   border-bottom: 1px solid var(--accent-dark);
   padding-bottom: 5px;

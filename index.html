@@ -4,6 +4,8 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <meta http-equiv="cache-control" content="no-cache">
+    <meta http-equiv="expires" content="Mon, 22 Jul 2002 11:12:01 GMT">
     <title>Lawnchair</title>
     <meta
       name="description"
@@ -35,18 +37,21 @@
     <meta name="msapplication-TileColor" content="#15c666" />
     <meta name="theme-color" content="#02d663" />
 
-    <link href="/assets/index.css" rel="stylesheet" />
-    <link href="/assets/common.css" rel="stylesheet" />
+    <link href="/assets/index.css?1234" rel="stylesheet" />
+    <link href="/assets/common.css?1234" rel="stylesheet" />
   </head>
   <body>
     <header>
       <a href="/" class="lawnchair__logo">
-        <img
-          src="/assets/lawnchair.png"
-          width="30"
-          height="30"
-          alt="The Lawnchair Logo"
-        />
+        <picture>
+          <source type="image/webp" srcset="/assets/lawnchair.webp" />
+          <img
+            src="/assets/lawnchair.png"
+            width="30"
+            height="30"
+            alt="The Lawnchair Logo"
+          />
+        </picture>
         <span>Lawnchair</span>
       </a>
       <nav>
@@ -62,13 +67,16 @@
         </div>
         <div class="hero__wrapper">
           <div class="hero__left hero__content">
-            <img
-              class="hero__content__icon"
-              src="/assets/lawnchair.png"
-              width="150"
-              height="150"
-              alt="The Lawnchair Logo"
-            />
+            <picture>
+              <source type="image/webp" srcset="/assets/lawnchair.webp" />
+              <img
+                class="hero__content__icon"
+                src="/assets/lawnchair.png"
+                width="150"
+                height="150"
+                alt="The Lawnchair Logo"
+              />
+            </picture>
             <h1 class="hero__content__name">Lawnchair</h1>
             <div class="hero__content__description">
               No clever tagline needed.
@@ -142,13 +150,16 @@
         </div>
       </section>
       <section class="about">
-        <img
-          class="about__image"
-          src="/assets/phone.png"
-          alt="A screenshot of a user using Lawnchair for their home screen."
-          width="300"
-          height="600"
-        />
+        <picture>
+          <source type="image/webp" srcset="/assets/phone.webp" />
+          <img
+            class="about__image"
+            src="/assets/phone.png"
+            alt="A screenshot of a user using Lawnchair for their home screen."
+            width="300"
+            height="600"
+          />
+        </picture>
         <div class="about__info">
           <h2 class="about__header">No clever tagline needed</h2>
           <div class="about__description">
@@ -191,11 +202,9 @@
             ></a
           >
           <a class="link__card" href="https://discord.gg/3x8qNWxgGZ"
-            ><img
-              src="/assets/discord.svg"
-              alt=""
-              height="50"
-            /><span>Discord</span></a
+            ><img src="/assets/discord.svg" alt="" height="50" /><span
+              >Discord</span
+            ></a
           >
           <a
             class="link__card"
@@ -205,19 +214,14 @@
             <span>XDA</span>
           </a>
           <a class="link__card" href="/faq">
-            <img
-              src="/assets/faq.svg"
-              alt=""
-              height="50"
-            />
+            <img src="/assets/faq.svg" alt="" height="50" />
             <span>FAQ</span>
           </a>
-          <a class="link__card" href="https://github.com/LawnchairLauncher/lawnchair/wiki">
-            <img
-              src="/assets/wiki.svg"
-              alt=""
-              height="50"
-            />
+          <a
+            class="link__card"
+            href="https://github.com/LawnchairLauncher/lawnchair/wiki"
+          >
+            <img src="/assets/wiki.svg" alt="" height="50" />
             <span>Wiki</span>
           </a>
         </div>
@@ -227,16 +231,14 @@
       <span
         >Website by
         <a href="https://superdragonxd.github.io/">SuperDragonXD</a> - Hosted by
-        <a href="https://razex.de">Razex.de</a> - Icons in links section are
-        from <a href="https://www.flaticon.com">Flaticons</a> - Public Analytics
-        on
+        <a href="https://razex.de">Razex.de</a> - Public Analytics on
         <a href="https://simpleanalytics.com/lawnchair.app"
           >Simple Analytics</a
         ></span
       >
     </footer>
-    <script src="/assets/index.js" type="module"></script>
-    <script src="/assets/common.js" type="module"></script>
+    <script src="/assets/index.js?1234" type="module"></script>
+    <script src="/assets/common.js?1234" type="module"></script>
 
     <script
       async

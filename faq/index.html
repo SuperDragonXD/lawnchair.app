@@ -4,6 +4,8 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <meta http-equiv="cache-control" content="no-cache" />
+    <meta http-equiv="expires" content="Mon, 22 Jul 2002 11:12:01 GMT" />
     <title>Lawnchair FAQ</title>
     <meta
       name="description"
@@ -35,28 +37,26 @@
     <meta name="msapplication-TileColor" content="#15c666" />
     <meta name="theme-color" content="#02d663" />
 
-    <link href="/assets/faq.css" rel="stylesheet" />
-    <link href="/assets/common.css" rel="stylesheet" />
+    <link href="/assets/faq.css?1234" rel="stylesheet" />
+    <link href="/assets/common.css?1234" rel="stylesheet" />
   </head>
   <body>
     <header>
       <a href="/" class="lawnchair__logo">
-        <img
-          src="/assets/lawnchair.png"
-          width="30"
-          height="30"
-          alt="The Lawnchair Logo"
-        />
+        <picture>
+          <source type="image/webp" srcset="/assets/lawnchair.webp" />
+          <img
+            src="/assets/lawnchair.png"
+            width="30"
+            height="30"
+            alt="The Lawnchair Logo"
+          />
+        </picture>
         <span>Lawnchair</span>
       </a>
-<!--       <nav>
-        <span class="active">FAQ</span>
-      </nav> -->
     </header>
-    <main>
-      <h1 id="home">
-        Lawnchair FAQ
-      </h1>
+    <main id="contents">
+      <h1>Lawnchair FAQ</h1>
       <p>
         Welcome to the Lawnchair FAQ! This page provides answers to frequently
         asked questions about Lawnchair. Note that this FAQ is mostly related to
@@ -64,6 +64,7 @@
         supported. Some parts may have instructions for older versions of
         Lawnchair.
       </p>
+      <div id="toc" class="collapsed"></div>
       <h2 id="general">General</h2>
       <h3 id="how-to-download-lawnchair">How to download Lawnchair?</h3>
       <ul>
@@ -115,6 +116,14 @@
         about it won&#39;t be accepted. This is done to focus development on
         making Lawnchair 12.1 finished and making it similar to Lawnchair 2.
         Also, maintaining legacy code is not a focus of the developers.
+      </p>
+      <h3>What are the differences between Lawnchair V2 and 12.1?</h3>
+      <p>
+        V2 is the latest stable version of Lawnchair. It has many more features
+        and is more stable, but is now outdated and unsupported. On the other
+        hand, 11-12.1 is a complete redesign from scratch. Not all features have
+        been re-implemented yet, but it does have Material You and all the new
+        Android 11-12.1 features.
       </p>
       <h3 id="can-you-return-a-feature-from-lawnchair-2">
         Can you return a feature from Lawnchair 2?
@@ -349,10 +358,10 @@
         Recents customization and more features.
       </p>
       <h3
-        id="im-experiencing-lang-after-i-set-lawnchair-as-a-quickstep-provider-what-do-i-do"
+        id="im-experiencing-lag-after-i-set-lawnchair-as-a-quickstep-provider-what-do-i-do"
       >
-        I&#39;m experiencing lang after I set Lawnchair as a QuickStep provider.
-        What do I dO?
+        I&#39;m experiencing lag after I set Lawnchair as a QuickStep provider.
+        What do I do?
       </h3>
       <p>
         If you&#39;re experiencing jank/lag after setting a Recents provider you
@@ -394,33 +403,29 @@
       </p>
       <h4 id="lawnchair-v12-alpha-3">Lawnchair v12 Alpha 3+</h4>
       <p>
-        For Lawnchair V12 alpha 3 and up, you will get a notification once
+        For Lawnchair V12 alpha 3 and up, you will get a notification when
         Lawnchair crashes, tap the share button and share the file. A link will
         be added to your clipboard. Add the link in the &quot;Additional
         Information&quot; section, as stated above.
       </p>
       <h4 id="lawnchair-11-and-below">Lawnchair 11 and below</h4>
       <ol>
-        <li><p>Download and install the Scoop app</p></li>
+        <li>Download and install the Scoop app</li>
         <li>
-          <p>
-            Grant permissions to the app using either root or via ADB using the
-            command
-            <code
-              >adb shell pm grant taco.scoop android.permission.READ_LOGS</code
-            >
-          </p>
+          Grant permissions to the app using either root or via ADB using the
+          command
+          <code
+            >adb shell pm grant taco.scoop android.permission.READ_LOGS</code
+          >
         </li>
         <li>
-          <p>
-            Reproduce the crash Copy the stack trace, and paste it to the above
-            section.
-          </p>
+          Reproduce the crash Copy the stack trace, and paste it to the above
+          section.
         </li>
       </ol>
       <p>
-        NOTE: Please attach a short explanation when sending bug reports, as it
-        will help both devs to understand your issue better and help you.
+        <b>Note:</b> Please attach a short explanation when sending bug reports,
+        as it will help both devs to understand your issue better and help you.
       </p>
       <p>
         Reporting for V10 and below: Please use this method for V10 and below as
@@ -435,6 +440,20 @@
         <a href="https://lawnchair.crowdin.com/lawnchair">Crowdin</a>.
       </p>
     </main>
-    <script src="/assets/common.js" type="module"></script>
+    <script src="/assets/common.js?1234" type="module"></script>
+    <script src="/assets/faq.js"></script>
+
+    <script
+      async
+      defer
+      src="https://scripts.simpleanalyticscdn.com/latest.js"
+    ></script>
+    <noscript>
+      <img
+        src="https://queue.simpleanalyticscdn.com/noscript.gif"
+        alt=""
+        referrerpolicy="no-referrer-when-downgrade"
+      />
+    </noscript>
   </body>
 </html>

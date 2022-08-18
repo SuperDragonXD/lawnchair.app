@@ -41,7 +41,7 @@ main > * {
 }
 
 .hero__notice a {
-  color: hsl(222deg 80% 40%) ;
+  color: hsl(222deg 80% 40%);
   text-decoration: none;
 }
 
@@ -51,6 +51,7 @@ main > * {
 
 .hero__content__icon {
   height: 150px;
+  border-radius: 50%;
 }
 
 .hero__content__name {
