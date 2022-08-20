@@ -1,0 +1,50 @@
+.cards {
+  display: flex;
+  gap: 10px;
+  padding: 10px;
+}
+
+.card {
+  background: var(--accent-lighter);
+  padding: 20px;
+  border-radius: 20px;
+  flex: auto;
+}
+
+.card:hover {
+  background: var(--accent-light);
+}
+.card:active,
+.card.active {
+  background: var(--accent-normal);
+}
+
+.tabs_and_cards {
+  display: flex;
+}
+
+.tabs_and_cards * {
+  flex: 1 1 auto;
+}
+
+.tabs {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  padding: 10px;
+  max-width: 30%;
+}
+
+.tab {
+  background: var(--accent-lighter);
+  padding: 20px;
+  border-radius: 20px;
+}
+
+.tab:hover {
+  background: var(--accent-light);
+}
+.tab:active,
+.tab.active {
+  background: var(--accent-normal);
+}
